@@ -1,0 +1,866 @@
+/*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END RESET*/
+
+/* Box Model Hack */
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+	   -moz-box-sizing: border-box; /* Firexfox */
+			box-sizing: border-box; /* IE */
+}
+
+/*Layout*/
+
+.container {
+	background-color: #222;
+}
+
+.main-content {
+	padding: 20px;
+}
+
+header {
+	background-color: #000;
+	padding: 10px 15px;
+}
+
+/*Aditional Styles*/
+
+h1 {
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-style: italic;
+	margin: 10px 0;
+	padding-left: 10px;
+}
+
+h3 {
+	/*color: #fff;*/
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0px 10px;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #9B2A90;
+}
+
+.nav {
+	color: #fff;
+	display: inline-block;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	float: right;
+}
+
+.horizontal-list li {
+	display: inline-block;
+  padding:  5px 10px;
+  list-style-type: none;
+}
+
+.horizontal-list ul {
+	margin: 0px;
+  text-align: right;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.welcomeicons {
+	padding-bottom: 24px;
+}
+
+.nextissue {
+	display: none;
+}
+
+.thumb {
+	/*height: 145px;*/
+	width: 45%;
+	background-color: #fff;
+	display: inline-block;
+	margin: 10px 10px 10px 0px;
+	padding-bottom: 45%;
+
+}
+
+.thumbleft {
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.thumbimg {
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.issuenumber {
+	background-color: #000;
+	float: left;
+	color: #fff;
+	padding: 5px 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.one {background-image: url(img/coverissue1.jpg);}
+
+.two {background-image: url(img/coverissue2.jpg);}
+
+.three {background-image: url(img/coverissue3.jpg);}
+
+.four {background-image: url(img/coverissue4.jpg);}
+
+.five {background-image: url(img/coverissue5.jpg);}
+
+.six {background-image: url(img/coverissue6.jpg);}
+
+.seven {background-image: url(img/coverissue7.jpg);}
+
+.eight {background-image: url(img/coverissue8.jpg);}
+
+.nine {background-image: url(img/coverissue9.jpg);}
+
+
+/* Gods */
+
+.amatersu {background: url(img/amaterasu_godicon-02.svg); background-size: cover;}
+
+.deadluci {background: url(img/deadluci_godicon-03.svg); background-size: cover;}
+
+.aliveluci {background: url(img/aliveluci-godicon-02.svg); background-size: cover;}
+
+.minerva {background: url(img/minerva_godicon-11.svg); background-size: cover;}
+
+.sakhmet {background: url(img/sakhmet_godicon-04.svg); background-size: cover;}
+
+.baphomet {background: url(img/baphomet_godicon-06.svg); background-size: cover;}
+
+.woden {background: url(img/woden_godicon-09.svg); background-size: cover;}
+
+.morrigan {background: url(img/themorrigan_godicon-01.svg); background-size: cover;}
+
+.dionysus {background: url(img/dionysus_godicon-08.svg); background-size: cover;}
+
+.inanna {background: url(img/inanna_godicon-07.svg); background-size: cover;}
+
+.none {background: url(img/none_godicon-10.svg); background-size: cover;}
+
+.unknown {background: url(img/unknown-godicon-02.svg); background-size: cover;}
+
+.baal {background: url(img/baal_godicon-05.svg); background-size: cover;}
+
+/*Trade Icons*/
+
+.voltwo {background: url(img/vol2-icon-02.svg); background-size: cover;}
+
+.volone {background: url(img/vol1-icon-02.svg); background-size: cover;}
+
+.icon {
+	height: 165px;
+	width: 165px;
+	margin: 30px auto;
+}
+
+.identity ul {
+	color: #fff;
+	text-align: center;
+	list-style: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	padding: 0;
+}
+
+.identity li {
+	margin: 5px; 
+}
+
+p {
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 20px 10px;
+	line-height: 24px;
+	font-size: 18px;
+}
+
+.scroll {
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	position: absolute;
+	padding: 10px;
+	bottom: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+.back {
+	background: url(img/backarrow-01.svg); 
+	background-size: 22px;
+	background-repeat: no-repeat;
+	height: 26px;
+	margin: 0px 10px 0px 10px;
+	width: 4%;
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.cover {
+	height: 100vh;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+}
+
+.summary {
+	background-color: #222;
+	padding: 20px;
+}
+
+.article {
+	margin: 0;
+	padding: 0px 10px 20px 10px;
+}
+
+h4 {
+	display: none;
+}
+
+.inactive {
+	opacity: 0.3;
+}
+
+#nameonhover {
+		display: none;
+	}
+
+p a {
+		color: #aaa;
+	}
+
+	.contact {
+		padding-top: 0px;
+	}
+
+
+
+/*Media Quieries*/
+
+@media screen and (min-width: 600px) {
+
+	body {
+		height: 100vh;
+		background-color: #222;
+	}
+
+	.issues {
+		padding: 0 0px 0 5px;
+	}
+
+	.back {
+	background-size: 18px;
+  margin: 0px 10px 0px 15px;
+	}
+
+	p {
+	padding: 20px 40px;
+	}
+
+	.thumb {
+		height: 250px;
+		width: 160px;
+		margin: 10px 10px;
+	}
+
+	.thumbleft {
+		margin: 10px 10px;
+	}
+
+	.godcircle {
+		padding: 10px 20px;
+	}
+
+	.icondesktop  div{
+		width: 150px;
+		height: 150px;
+		padding-bottom: 0px;
+	}
+
+	/*Index*/
+
+	h3 {
+		padding: 0px 40px;
+		font-size: 36px;
+	}
+
+	.tradeicon {
+		width: 35%;
+  	height: 0px;
+  	padding-bottom: 35%;
+  	margin-left: 8%
+	}
+
+}
+
+
+
+@media screen and (min-width: 760px) {
+
+	.issues {
+		padding: 0 0 0 30px;
+	}
+
+	.thumb {
+		height: 300px;
+		width: 190px;
+		margin: 10px 15px;
+	}
+
+	.summary {
+		padding: 20px 50px;
+	}
+
+	h4 {
+		color: #9B2A90;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 38px;
+		display: block;
+		margin: 20px 0px 20px 10px;
+	}
+
+	/*Pantheon*/
+
+	#nameonhover {
+		display: block;
+		font-family: 'Open Sans Condensed', sans-serif;
+  	font-size: 20px;
+  	color: #fff;
+  	text-align: center;
+  	top: 45%;
+	  position: absolute;
+	  left: -.5%;
+	  display: block;
+	  width: 100%;
+	  text-transform: uppercase;
+	}
+
+
+	.godcircle {
+		width: 80%;
+		height: 100vh;
+		margin-left: 9%;
+		position: relative;
+		/*transform: scale(.8);*/
+	}
+
+	.icondesktop {
+		width: 106px;
+		height: 106px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -53px;
+		margin-left: -53px;
+		transform-origin: 50% 300px;
+		-webkit-transform-origin: 50% 300px;
+		-moz-transform-origin: 50% 300px;
+		display: block;
+	}
+
+	.icondesktop div {
+		width: 106px;
+		height: 106px;
+	}
+
+	.p1 {
+		transform: translatey(-270px);	
+		-webkit-transform: translatey(-270px);	
+		-moz-transform: translatey(-270px);	
+	}
+
+	.p2 {
+		transform: translatey(-270px) rotatez(30deg);
+		-webkit-transform: translatey(-270px) rotatez(30deg);
+		-moz-transform: translatey(-270px) rotatez(30deg);
+
+	}
+	.p2 div {
+		transform: rotatez(-30deg);
+		-webkit-transform: rotatez(-30deg);
+		-moz-transform: rotatez(-30deg);
+	}
+
+	.p3 {
+		transform: translatey(-270px) rotatez(60deg);
+		-webkit-transform: translatey(-270px) rotatez(60deg);
+		-moz-transform: translatey(-270px) rotatez(60deg);
+	}
+
+	.p3 div{
+		transform: rotatez(-60deg);
+		-webkit-transform: rotatez(-60deg);
+		-moz-transform: rotatez(-60deg);
+	}
+
+	.p4 {
+		transform: translatey(-270px) rotatez(90deg);
+		-webkit-transform: translatey(-270px) rotatez(90deg);
+		-moz-transform: translatey(-270px) rotatez(90deg);
+	}
+
+	.p4 div {
+		transform: rotatez(-90deg);
+		-webkit-transform: rotatez(-90deg);
+		-moz-transform: rotatez(-90deg);
+	}
+
+	.p5 {
+		transform: translatey(-270px) rotatez(120deg);
+		-webkit-transform: translatey(-270px) rotatez(120deg);
+		-moz-transform: translatey(-270px) rotatez(120deg);
+	}
+
+	.p5 div {
+		transform: rotatez(-120deg);
+		-webkit-transform: rotatez(-120deg);
+		-moz-transform: rotatez(-120deg);
+	}
+
+	.p6 {
+		transform: translatey(-270px) rotatez(150deg);
+		-webkit-transform: translatey(-270px) rotatez(150deg);
+		-moz-transform: translatey(-270px) rotatez(150deg);
+	}
+
+	.p6 div {
+		transform: rotatez(-150deg);
+		-webkit-transform: rotatez(-150deg);
+		-moz-transform: rotatez(-150deg);
+	}
+
+	.p7 {
+		transform: translatey(-270px) rotatez(180deg);
+		-webkit-transform: translatey(-270px) rotatez(180deg);
+		-moz-transform: translatey(-270px) rotatez(180deg);
+	}
+
+	.p7 div {
+		transform: rotatez(-180deg);
+		-webkit-transform: rotatez(-180deg);
+		-moz-transform: rotatez(-180deg);
+	}
+
+	.p8 {
+		transform: translatey(-270px) rotatez(210deg);
+		-webkit-transform: translatey(-270px) rotatez(210deg);
+		-moz-transform: translatey(-270px) rotatez(210deg);
+	}
+
+	.p8 div {
+		transform: rotatez(-210deg);
+		-webkit-transform: rotatez(-210deg);
+		-moz-transform: rotatez(-210deg);
+	}
+
+	.p9 {
+		transform: translatey(-270px) rotatez(240deg);
+		-webkit-transform: translatey(-270px) rotatez(240deg);
+		-moz-transform: translatey(-270px) rotatez(240deg);
+	}
+
+	.p9 div {
+		transform: rotatez(-240deg);
+		-webkit-transform: rotatez(-240deg);
+		-moz-transform: rotatez(-240deg);
+	}
+
+	.p10 {
+		transform: translatey(-270px) rotatez(270deg);
+		-webkit-transform: translatey(-270px) rotatez(270deg);
+		-moz-transform: translatey(-270px) rotatez(270deg);
+	}
+
+	.p10 div {
+		transform: rotatez(-270deg);
+		-webkit-transform: rotatez(-270deg);
+		-moz-transform: rotatez(-270deg);
+	}
+
+	.p11 {
+		transform: translatey(-270px) rotatez(300deg);
+		-webkit-transform: translatey(-270px) rotatez(300deg);
+		-moz-transform: translatey(-270px) rotatez(300deg);
+	}
+
+	.p11 div {
+		transform: rotatez(-300deg);
+		-webkit-transform: rotatez(-300deg);
+		-moz-transform: rotatez(-300deg);
+	}
+
+	.p12 {
+		transform: translatey(-270px) rotatez(330deg);
+		-webkit-transform: translatey(-270px) rotatez(330deg);
+		-moz-transform: translatey(-270px) rotatez(330deg);
+	}
+
+	.p12 div {
+		transform: rotatez(-330deg);
+		-webkit-transform: rotatez(-330deg);
+		-moz-transform: rotatez(-330deg);
+	}
+
+	p {
+		padding: 20px 60px;
+	}
+
+	.identity ul {
+		padding: 0 0 0 50px;
+		text-align: left;
+	}
+
+	.backgods {
+		margin: 0px 10px 0px 60px;}
+
+	/*Index*/
+
+	.tradeicon {
+		width: 30%;
+		height: 0px;
+  	padding-bottom: 30%;
+  	margin-left: 15%;
+	}
+
+	.tradeicon:last-child {
+  	margin-left: 4%;
+	}
+
+	.welcomeicons {
+  	padding-top: 2%;
+  	padding-bottom: 5%;
+	 }
+
+	 h3 {
+	 	padding: 0px 60px;
+	 }
+
+}
+
+@media screen and (min-width: 800px) {
+
+	body {
+		background-color: #000;
+	}
+
+	header {
+		padding: 20px;
+	}
+
+	.container {
+		margin: auto;
+		width: 80%;
+	}
+
+	.main-content {
+		padding: 0 0 20px 0;
+	}
+
+	.nextissue {
+		display: inline-block;
+		background-image: url(img/coverissue10.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+		height: 100vh;
+		width: 50%;
+		vertical-align: top;
+		margin-right: 2%;
+	}
+
+	.nextmonth {
+		background-color: #111;
+		float: left;
+		color: #fff;
+		font-size: 22px;
+		padding: 8px 12px;
+		font-family: 'Open Sans Condensed', sans-serif;
+	}
+
+	.issues {
+		width: 45%;
+		display: inline-block;
+		padding: 20px 0 0 10px;
+	}
+
+	.thumb {
+		margin: 10px;
+		display: inline-block;
+	}
+
+	/*Issue Page*/
+
+	.cover {
+		height: 100vh;
+		width: 45%;
+		display: inline-block;
+		vertical-align: top;
+
+	}
+
+	.scroll {
+		display: none;
+	}
+
+	.summary {
+		width: 50%;
+		display: inline-block;
+		margin-top: 10%;
+		padding: 20px;
+	}
+
+	h2 {
+		margin-bottom: 50px;
+	}
+
+	h4 {
+		margin: 0px 0px 20px 10px;
+	}
+
+	.back {
+		background-size: 12px;
+		width: 4%;
+		display: inline-block;
+		height: 14px;
+		margin: 0px
+	}
+
+	/*God Profile*/
+
+	.icon {
+		width: 305px;
+		height: 305px;
+	}
+
+	.identity {
+		width: 55%;
+		margin: auto;
+		padding-top: 20px;
+	}
+
+	.identity ul {
+		text-align: left;
+		padding: 0;
+	}
+
+	.myth {
+		width: 55%;
+		margin: auto;
+	}
+
+	p {
+		padding-left: 2px;
+		padding: 20px 0px;
+	}
+
+	/*God Circle*/
+
+	/*#nameonhover {
+		display: block;
+		font-family: 'Open Sans Condensed', sans-serif;
+  	font-size: 20px;
+  	color: #fff;
+  	text-align: center;
+  	top: 45%;
+	  position: absolute;
+	  left: -.5%;
+	  display: block;
+	  width: 100%;
+	  text-transform: uppercase;
+	}*/
+
+	.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12 {
+		transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+	}
+
+	.p1:hover {
+		transform: translatey(-290px);
+		-webkit-transform: translatey(-290px);
+     -moz-transform: translatey(-290px);
+	}
+
+	.p2:hover {
+		transform: translatey(-300px) rotatez(34deg);
+		-webkit-transform: translatey(-300px) rotatez(34deg);
+     -moz-transform: translatey(-300px) rotatez(34deg);
+	}
+
+	.p3:hover {
+		transform: translatey(-335px) rotatez(75deg);
+		-webkit-transform: translatey(-335px) rotatez(75deg);
+     -moz-transform: translatey(-335px) rotatez(75deg);
+	}
+
+	.p4:hover {
+		transform-origin: 65% 320px;
+		-webkit-transform-origin: 65% 320px;
+		-moz-transform-origin: 65% 320px;
+	}
+
+	.p5:hover {
+		transform-origin: 50% 330px;
+		-webkit-transform-origin: 50% 330px;
+		-moz-transform-origin: 50% 330px;
+		transform: translatey(-300px) rotatez(120deg);
+		-webkit-transform: translatey(-300px) rotatez(120deg);
+     -moz-transform: translatey(-300px) rotatez(120deg);
+	}
+
+	.p6:hover {
+		transform-origin: 50% 330px;
+		-webkit-transform-origin: 50% 330px;
+		-moz-transform-origin: 50% 330px;
+		transform: translatey(-300px) rotatez(150deg);
+		-webkit-transform: translatey(-300px) rotatez(150deg);
+     -moz-transform: translatey(-300px) rotatez(150deg);
+	}
+
+	.p7:hover {
+		transform-origin: 50% 320px;
+		-webkit-transform-origin: 50% 320px;
+		-moz-transform-origin: 50% 320px;
+	}
+
+	.p8:hover {
+		transform-origin: 50% 330px;
+		-webkit-transform-origin: 50% 330px;
+		-moz-transform-origin: 50% 330px;
+		transform: translatey(-300px) rotatez(210deg);
+		-webkit-transform: translatey(-300px) rotatez(210deg);
+     -moz-transform: translatey(-300px) rotatez(210deg);
+	}
+	
+	.p9:hover {
+		transform-origin: 50% 330px;
+		-webkit-transform-origin: 50% 330px;
+		-moz-transform-origin: 50% 330px;
+		transform: translatey(-300px) rotatez(240deg);
+		-webkit-transform: translatey(-300px) rotatez(240deg);
+     -moz-transform: translatey(-300px) rotatez(240deg);
+	}
+
+	.p11:hover {
+		transform: translatey(-315px) rotatez(290deg);
+		-webkit-transform: translatey(-315px) rotatez(290deg);
+     -moz-transform: translatey(-315px) rotatez(290deg);
+	}
+
+	.inactive {
+		cursor: default;
+	}
+
+	/*Index*/
+
+	.tradeicon {
+		width: 130px;
+  	height: 130px;
+  	padding-bottom: 0%;
+  	display: block;
+  	margin-left: 40%;
+  	margin-bottom: 30px;
+	}
+
+	.welcomeicons {
+	  padding-bottom: 24px;
+	  width: 45%;
+	  display: inline-block;
+	  vertical-align: top;
+	  margin-top: 16%;
+	}
+
+	.welcome {
+		width: 50%;
+  	display: inline-block;
+  	margin-top: 12%;
+  	padding-bottom: 5.5%;
+  	padding-right: 5%;
+	}
+
+	h3 {
+		font-size: 48px;
+  	margin-bottom: 5%;
+  	padding: 0px;
+  	color: #9B2A90;
+	}
+
+	.tradeicon:last-child {
+  	margin-left: 40%;
+	}
+
+	
+
+}

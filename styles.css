@@ -302,8 +302,12 @@ p a {
 		color: #aaa;
 	}
 
-	.contact {
-		padding-top: 0px;
+.contact {
+	padding-top: 0px;
+}
+
+.currentlink {
+		color: #9B2A90;
 	}
 
 
@@ -331,8 +335,8 @@ p a {
 	}
 
 	.thumb {
-		height: 250px;
-		width: 160px;
+		height: 0px;
+  	width: 29%;
 		margin: 10px 10px;
 	}
 
@@ -374,11 +378,12 @@ p a {
 		padding: 0 0 0 30px;
 	}
 
-	.thumb {
-		height: 300px;
-		width: 190px;
+	/*.thumb {
+		height: 0;
+		width: 43%;
 		margin: 10px 15px;
-	}
+		padding-bottom: 67%
+	}*/
 
 	.summary {
 		padding: 20px 50px;
@@ -656,9 +661,19 @@ p a {
 	}
 
 	.thumb {
-		margin: 10px;
+		margin: 2%;
 		display: inline-block;
+		height: 0;
+		width: 43%;
+		padding-bottom: 67%;
 	}
+
+	/*.thumb {
+		height: 0;
+		width: 43%;
+		margin: 10px 15px;
+		padding-bottom: 67%
+	}*/
 
 	/*Issue Page*/
 
@@ -843,7 +858,7 @@ p a {
 	}
 
 	.welcome {
-		width: 50%;
+		width: 45%;
   	display: inline-block;
   	margin-top: 12%;
   	padding-bottom: 5.5%;
@@ -861,6 +876,16 @@ p a {
   	margin-left: 40%;
 	}
 
+	a:hover {
+		color: #aaa;
+	}
+
+	p a:hover {
+		text-decoration: underline;
+	}
 	
+	/*.currentlink {
+		color: #9B2A90;
+	}*/
 
 }

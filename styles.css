@@ -58,6 +58,10 @@ table {
 
 /*Layout*/
 
+body {
+	background-color: #222;
+}
+
 .container {
 	background-color: #222;
 }
@@ -354,7 +358,7 @@ p a {
 		padding-bottom: 0px;
 	}
 
-	/*Index*/
+	/** Index **/
 
 	h3 {
 		padding: 0px 40px;
@@ -397,7 +401,7 @@ p a {
 		margin: 20px 0px 20px 10px;
 	}
 
-	/*Pantheon*/
+	/** Pantheon **/
 
 	#nameonhover {
 		display: block;
@@ -617,12 +621,22 @@ p a {
 
 @media screen and (min-width: 800px) {
 
+	/** General Styles **/
+
 	body {
 		background-color: #000;
 	}
 
+	a:hover {
+		color: #aaa;
+	}
+
+	p a:hover {
+		text-decoration: underline;
+	}
+
 	header {
-		padding: 20px;
+		padding: 15px;
 	}
 
 	.container {
@@ -633,6 +647,8 @@ p a {
 	.main-content {
 		padding: 0 0 20px 0;
 	}
+
+	/** Issues Hub **/
 
 	.nextissue {
 		display: inline-block;
@@ -668,14 +684,7 @@ p a {
 		padding-bottom: 67%;
 	}
 
-	/*.thumb {
-		height: 0;
-		width: 43%;
-		margin: 10px 15px;
-		padding-bottom: 67%
-	}*/
-
-	/*Issue Page*/
+	/** Issue Page **/
 
 	.cover {
 		height: 100vh;
@@ -712,7 +721,7 @@ p a {
 		margin: 0px
 	}
 
-	/*God Profile*/
+	/** God Profile **/
 
 	.icon {
 		width: 305px;
@@ -740,21 +749,7 @@ p a {
 		padding: 20px 0px;
 	}
 
-	/*God Circle*/
-
-	/*#nameonhover {
-		display: block;
-		font-family: 'Open Sans Condensed', sans-serif;
-  	font-size: 20px;
-  	color: #fff;
-  	text-align: center;
-  	top: 45%;
-	  position: absolute;
-	  left: -.5%;
-	  display: block;
-	  width: 100%;
-	  text-transform: uppercase;
-	}*/
+	/** God Circle **/
 
 	.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12 {
 		transition: all 0.5s ease;
@@ -840,21 +835,24 @@ p a {
 
 	/*Index*/
 
-	.tradeicon {
-		width: 130px;
-  	height: 130px;
-  	padding-bottom: 0%;
-  	display: block;
-  	margin-left: 40%;
-  	margin-bottom: 30px;
-	}
-
 	.welcomeicons {
 	  padding-bottom: 24px;
 	  width: 45%;
 	  display: inline-block;
 	  vertical-align: top;
 	  margin-top: 16%;
+	}
+
+	.tradeicon {
+		width: 130px;
+  	height: 130px;
+  	padding-bottom: 0%;
+  	display: block;
+  	margin: auto;
+	}
+
+	.tradeicon:last-child {
+  	margin: 30px auto;
 	}
 
 	.welcome {
@@ -871,21 +869,5 @@ p a {
   	padding: 0px;
   	color: #9B2A90;
 	}
-
-	.tradeicon:last-child {
-  	margin-left: 40%;
-	}
-
-	a:hover {
-		color: #aaa;
-	}
-
-	p a:hover {
-		text-decoration: underline;
-	}
-	
-	/*.currentlink {
-		color: #9B2A90;
-	}*/
 
 }
